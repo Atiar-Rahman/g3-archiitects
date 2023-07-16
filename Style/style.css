@@ -189,7 +189,7 @@ main{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     justify-content: space-around;
-    margin: 50px 0;
+    margin: 50px 50px;
     gap: 100px;
 
 }
@@ -210,9 +210,38 @@ main{
 /* finished the facts section */
 
 
+.sopnsors-title{
+    text-align: center;
+}
+.sponsors{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 50px;
+    justify-content: space-around;
+}
 
 
 
+
+/* finished the sponsors section */
+
+
+/* style of  footer section */
+
+.footer-description{
+    font-size: 20px;
+    font-weight: 400;
+     color: #424242;
+}
+footer{
+        border-radius: 8px;
+        background: #FFF4E7;
+        width: 1200px;
+        height: 60px;
+        margin: 30px auto;
+        text-align: center;
+        padding-top: 40px;
+}
 
 
 @media screen and (max-width: 576px) {
@@ -244,6 +273,16 @@ main{
         gap: 30px;
         margin: 20px;
     }
+
+    .sponsors{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-left: 150px;
+    }
+    footer{
+        width: 500px;
+        margin: 30px auto;
+    }
 }
 
 
@@ -266,5 +305,15 @@ main{
         grid-template-columns: 1fr 1fr;
         gap: 30px;
         margin: 20px;
+    }
+
+    .sponsors{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin: 50px;
+    }
+    footer{
+        width: 800px;
+        margin: 30px auto;
     }
 }
